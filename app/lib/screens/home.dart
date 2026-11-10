@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -6,18 +5,37 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.orange,
-      margin:const EdgeInsets.symmetric(horizontal: 20,vertical: 30),
-      padding: EdgeInsets.all(20),
-      child: Text(
-        "Hello",
-        style: TextStyle(
-          fontSize: 30,
-          letterSpacing: 3,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Container(
+          color: Colors.orange,
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(fontSize: 30, letterSpacing: 3),
+          ),
         ),
+
+        Container(
+          color: Colors.orange,
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(fontSize: 30, letterSpacing: 3),
+          ),
         ),
-      
+
+        Container(
+          color: Colors.orange,
+          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: Text(
+            "Hello",
+            style: TextStyle(fontSize: 30, letterSpacing: 3),
+          ),
+        ),
+      ],
     );
   }
 }
