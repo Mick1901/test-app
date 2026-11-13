@@ -5,36 +5,15 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.orange,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(fontSize: 30, letterSpacing: 3),
-          ),
-        ),
-
-        Container(
-          color: Colors.orange,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(fontSize: 30, letterSpacing: 3),
-          ),
-        ),
-
-        Container(
-          color: Colors.orange,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(fontSize: 30, letterSpacing: 3),
-          ),
-        ),
+        Image.network(
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKdh4Pe6Wd9tP595uiYkZOgbEzd_nWzFf4q6J_5BIpQ&s=10",
+          width: 150,
+          height: 150,)
+      
       ],
     );
   }
